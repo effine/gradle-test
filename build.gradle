@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+
+jar {
+	// 配置项目运行主类
+    manifest {
+        attributes 'Main-Class': 'cn.effine.test.FirstClass'
+    }
+}
