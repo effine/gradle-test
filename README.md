@@ -1,4 +1,4 @@
-GitDemo
+gradle-test
 =======
 
-test git program; study git command
+gradle test project
