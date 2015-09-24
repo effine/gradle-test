@@ -1,5 +1,15 @@
 apply plugin: 'java'
 
+// 配置war插件,可以使用 gradle war进行打包
+apply plugin: "war"
+
+// 配置版本信息
+version  "1.0"
+/**
+* or
+* version="1.0"
+*/
+
 repositories {
     mavenCentral()
 }
