@@ -1,13 +1,11 @@
-# eclipse files
-.settings
+.settings/
+.gradle/
+bin/
+target/
+build/
+
 .classpath
 .project
-
-# java files
-/target
-/build
-/bin
-.gradle/
 *.war
 *.jar
 *.ear
