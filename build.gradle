@@ -1,14 +1,8 @@
 apply plugin: 'java'
+apply plugin: "war"		// 配置war插件,可以使用 gradle war进行打包
 
-// 配置war插件,可以使用 gradle war进行打包
-apply plugin: "war"
-
-// 配置版本信息
-version  "1.0"
-/**
-* or
-* version="1.0"
-*/
+version  "1.0"		// 配置版本信息（或version="1.0"）
+buildDir "target"			// 配置输出目录
 
 repositories {
     mavenCentral()
