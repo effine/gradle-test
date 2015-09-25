@@ -1,6 +1,9 @@
 apply plugin: 'java'
 apply plugin: "war"		// 配置war插件,可以使用 gradle war进行打包
+apply plugin: 'jetty'	// 配置运行容器
 
+httpPort = 8080
+ 
 version  "1.0"		// 配置版本信息（或version="1.0"）
 buildDir "target"			// 配置输出目录
 
@@ -23,4 +26,24 @@ jar {
 // 配置Java项目字符编码
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
+}
+
+
+// 测试各种 Task
+task hello{
+	doLast{
+		println "hello world ! -- [doLast]"
+	}
+	
+	doFirst{
+		println "I`m effine ! -- [doFirst]"
+	}
+}
+
+task hello1 << {
+	println "hello world ! -- [task hello1]"
+}
+
+task hello2 {
+	println "hello world ! -- [task hello2]"
 }
