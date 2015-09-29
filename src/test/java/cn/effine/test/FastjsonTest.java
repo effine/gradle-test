@@ -8,7 +8,7 @@
 package cn.effine.test;
 
 
-public class Test {
+public class FastjsonTest {
 
 	public static void main(String[] args) {
 
