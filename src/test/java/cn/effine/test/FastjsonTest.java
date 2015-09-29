@@ -7,11 +7,23 @@
 
 package cn.effine.test;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import com.alibaba.fastjson.JSONObject;
 
 public class FastjsonTest {
 
 	public static void main(String[] args) {
 
-		System.out.println();
+		Map<String, Object> jsonMap = new HashMap<String, Object>();
+		jsonMap.put("a", 1);
+		jsonMap.put("b", "");
+		jsonMap.put("c", null);
+		jsonMap.put("d", "wuzhuti.cn");
+
+		String str = JSONObject.toJSONString(jsonMap);
+		System.out.println(str);
+		// 输出结果:{"a":1,"b":"",d:"wuzhuti.cn"}
 	}
 }
