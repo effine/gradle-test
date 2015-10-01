@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 
 public class FastjsonTest {
 
@@ -22,8 +23,10 @@ public class FastjsonTest {
 		jsonMap.put("c", null);
 		jsonMap.put("d", "wuzhuti.cn");
 
-		String str = JSONObject.toJSONString(jsonMap);
+		String str = JSONObject.toJSONString(jsonMap,
+				SerializerFeature.WriteMapNullValue);
 		System.out.println(str);
 		// 输出结果:{"a":1,"b":"",d:"wuzhuti.cn"}
+
 	}
 }
