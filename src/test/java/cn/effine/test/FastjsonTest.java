@@ -27,10 +27,6 @@ public class FastjsonTest {
 				SerializerFeature.WriteMapNullValue);
 		System.out.println(str);
 		// 输出结果:{"a":1,"b":"",d:"wuzhuti.cn"}
-		
-		
-		
-		
 
 	}
 }
