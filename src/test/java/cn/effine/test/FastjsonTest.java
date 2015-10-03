@@ -29,6 +29,8 @@ public class FastjsonTest {
 		// 输出结果:{"a":1,"b":"",d:"wuzhuti.cn"}
 		
 		
+		
+		
 
 	}
 }
