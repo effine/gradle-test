@@ -1,4 +1,2 @@
-gradle-test
-=======
 
-gradle build project
+test | gradle
